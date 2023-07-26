@@ -1,21 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
- 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
     <title>TODOs List</title>
- <style>
-    body{
-        background-color: cadetblue;
-    }
- </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -32,7 +28,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -47,7 +43,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" href="#call">Contact</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -56,25 +52,25 @@
             </form>
         </div>
     </nav>
-
-    <div class="container my-4">
+    <div class="container my-4" id="main">
         <h2 class="text-center">TODOs List</h2>
         <form id="todoForm">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" placeholder="Title..." aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="title" placeholder="Title..."
+                    aria-describedby="emailHelp" />
                 <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
             </div>
-    
+
             <div class="form-group">
                 <label for="description">Description</label>
                 <textarea class="form-control" id="description" rows="3" placeholder="Description..."></textarea>
             </div>
-    
+
             <button id="add" class="btn btn-primary">Add to list</button>
             <button id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
         </form>
-    
+
         <div id="items" class="my-4">
             <h2>Your Items</h2>
             <table class="table">
@@ -96,9 +92,72 @@
                 </tbody>
             </table>
         </div>
-    </div>    
-   <script src="./index.js"></script>  
-    
+    </div>
+
+    <!-- SECTIONS -->
+
+    <section class="about-section bg-white pl-5 pr-5" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-content" id="about">
+                    <h2>About</h2>
+                    <p>
+                        Hello! My name is Santosh Kumar Pasi. I am currently pursuing a
+                        bachelor's degree in Information Technology, and I am thrilled to
+                        share my passion for web development through this todo list
+                        project. As a tech enthusiast, I believe that organizing tasks
+                        efficiently is essential for productivity and time management.
+                        This led me to create a simple yet effective todo list application
+                        that helps users stay on top of their daily tasks. The todo list
+                        project is built using modern web technologies, including HTML,
+                        CSS, and JavaScript, with Bootstrap for a clean and responsive
+                        user interface. Users can add tasks, mark them as completed, and
+                        even delete tasks they've finished. Through this project, I aimed
+                        to strengthen my web development skills and gain hands-on
+                        experience in building interactive web applications. It has been
+                        an exciting journey, and I'm proud to present my work to you. I
+                        hope this todo list application proves to be useful for you as it
+                        has been for me during its development. Feel free to explore and
+                        use the app to manage your tasks effortlessly. Thank you for
+                        visiting my portfolio, and I'm looking forward to your feedback!
+                    </p>
+                </div>
+                <div class="col-md-6" id="call">
+                    <div class="contact-form" >
+                        <h2>Contact Us</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-muted white-text">By Santosh Kumar Pasi &copy; 2023. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>

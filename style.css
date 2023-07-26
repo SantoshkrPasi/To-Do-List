@@ -1,0 +1,82 @@
+body {
+    background-color: #2a7aca69;
+  }
+
+  .navbar {
+    background-color: #343a40;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #fff;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .form-inline .form-control {
+    width: 70%;
+  }
+
+  #main {
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #todoForm {
+    margin-top: 20px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .form-group small {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+
+  .about-section {
+    padding: 80px 5px;
+    background-color: #fff;
+  }
+
+  .about-section h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+
+  .contact-form h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    background-color: #2e3133;
+    color: #fff;
+  }
